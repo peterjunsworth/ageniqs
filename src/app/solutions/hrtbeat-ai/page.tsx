@@ -8,16 +8,16 @@ export const metadata: Metadata = {
 export default function HRTBeatPage() {
   return (
     <div className="min-h-screen">
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-blue-50 via-white to-brand-purple-50 py-20 sm:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center rounded-full px-4 py-2 bg-brand-blue-100 text-brand-blue-700 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center rounded-full px-4 py-2 bg-brand-blue-500/10 text-brand-blue-700 font-semibold text-sm mb-6">
               <span className="mr-2">⚡</span> Enterprise HR Platform
             </div>
-            <h1 className="text-4xl font-display font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-display font-bold tracking-tight text-white sm:text-6xl">
               <span className="text-gradient">HRTBeat AI</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-400">
               Transform HR operations with AI-powered insights, automation, and intelligent workflows designed for modern enterprises.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -31,7 +31,7 @@ export default function HRTBeatPage() {
                 href="https://www.hrtbeat.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-semibold leading-6 text-gray-900 border border-gray-300 px-6 py-3 rounded-lg hover:border-brand-blue-500 transition-all duration-200"
+                className="text-sm font-semibold leading-6 text-white border border-gray-700 px-6 py-3 rounded-lg hover:border-brand-blue-500 transition-all duration-200"
               >
                 Visit HRTBeat.ai <span aria-hidden="true">→</span>
               </a>
@@ -43,19 +43,19 @@ export default function HRTBeatPage() {
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl mb-16">
-            <h2 className="text-3xl font-display font-bold tracking-tight text-gray-900 mb-6">
+            <h2 className="text-3xl font-display font-bold tracking-tight text-white mb-6">
               The Challenge
             </h2>
-            <p className="text-lg text-gray-600 mb-4">
+            <p className="text-lg text-gray-400 mb-4">
               Modern HR teams struggle with fragmented systems, manual processes, and data silos that prevent them from making strategic, data-driven decisions. Traditional HRIS platforms weren't built for the AI era, leaving organizations unable to leverage the full potential of their people data.
             </p>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-400">
               HRTBeat AI solves this by bringing intelligent automation and AI-powered insights directly into HR operations.
             </p>
           </div>
 
           <div className="mx-auto max-w-7xl">
-            <h2 className="text-3xl font-display font-bold tracking-tight text-gray-900 mb-12 text-center">
+            <h2 className="text-3xl font-display font-bold tracking-tight text-white mb-12 text-center">
               Key Features
             </h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -115,12 +115,12 @@ export default function HRTBeatPage() {
                   ),
                 },
               ].map((feature, index) => (
-                <div key={index} className="rounded-2xl border border-gray-200 p-8 hover:shadow-card-hover transition-shadow duration-200">
-                  <div className="inline-flex items-center justify-center rounded-lg bg-brand-blue-100 p-3 mb-4 text-brand-blue-600">
+                <div key={index} className="rounded-2xl border border-gray-800 p-8 hover:shadow-card-hover transition-shadow duration-200">
+                  <div className="inline-flex items-center justify-center rounded-lg bg-brand-blue-500/10 p-3 mb-4 text-brand-blue-400">
                     {feature.icon}
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
+                  <p className="text-gray-400">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -128,61 +128,61 @@ export default function HRTBeatPage() {
         </div>
       </section>
 
-      <section className="py-24 sm:py-32 bg-gray-50">
+      <section className="py-24 sm:py-32 bg-gray-900">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-display font-bold tracking-tight text-gray-900 mb-12 text-center">
+            <h2 className="text-3xl font-display font-bold tracking-tight text-white mb-12 text-center">
               Benefits & ROI
             </h2>
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-brand-blue-100 text-brand-blue-600 font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-brand-blue-500/10 text-brand-blue-400 font-bold text-lg">
                     ✓
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Reduce HR Operational Costs</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold text-white mb-2">Reduce HR Operational Costs</h3>
+                  <p className="text-gray-400">
                     Automate time-consuming manual tasks and streamline workflows to cut operational costs by up to 40%.
                   </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-brand-blue-100 text-brand-blue-600 font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-brand-blue-500/10 text-brand-blue-400 font-bold text-lg">
                     ✓
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Improve Decision-Making Speed</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold text-white mb-2">Improve Decision-Making Speed</h3>
+                  <p className="text-gray-400">
                     Access real-time insights and predictive analytics to make faster, data-driven HR decisions.
                   </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-brand-blue-100 text-brand-blue-600 font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-brand-blue-500/10 text-brand-blue-400 font-bold text-lg">
                     ✓
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Boost Employee Retention</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold text-white mb-2">Boost Employee Retention</h3>
+                  <p className="text-gray-400">
                     Identify flight risks early and take proactive measures to retain top talent.
                   </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-brand-blue-100 text-brand-blue-600 font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-brand-blue-500/10 text-brand-blue-400 font-bold text-lg">
                     ✓
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Enhance Employee Experience</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold text-white mb-2">Enhance Employee Experience</h3>
+                  <p className="text-gray-400">
                     Deliver personalized, AI-powered experiences that boost engagement and satisfaction.
                   </p>
                 </div>
@@ -195,10 +195,10 @@ export default function HRTBeatPage() {
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-display font-bold tracking-tight text-gray-900 mb-4">
+            <h2 className="text-3xl font-display font-bold tracking-tight text-white mb-4">
               Ready to Transform Your HR Operations?
             </h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-400 mb-8">
               See HRTBeat AI in action. Schedule a personalized demo with our team.
             </p>
             <a

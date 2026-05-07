@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-950 text-white border-t border-gray-800">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           <div className="col-span-1 lg:col-span-2">
@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold mb-4">Company</h3>
+            <h3 className="text-sm font-semibold mb-4 text-gray-200">Company</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold mb-4">Solutions</h3>
+            <h3 className="text-sm font-semibold mb-4 text-gray-200">Solutions</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/solutions/hrtbeat-ai" className="text-gray-400 hover:text-white transition-colors">

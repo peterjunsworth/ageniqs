@@ -154,7 +154,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="interest" className="block text-sm font-medium text-gray-700 mb-2">
+        <label htmlFor="interest" className="block text-sm font-medium text-gray-300 mb-2">
           Area of Interest
         </label>
         <select
@@ -162,15 +162,15 @@ export default function ContactForm() {
           name="interest"
           value={formData.interest || ''}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-brand-blue-500 transition-all"
+          className="w-full px-4 py-3 border border-gray-700 bg-gray-900/50 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-brand-blue-500 transition-all"
         >
-          <option value="">Select an option</option>
-          <option value="hrtbeat">HRTBeat AI</option>
-          <option value="custom-ai">Custom AI Solutions</option>
-          <option value="consulting">AI Consulting</option>
-          <option value="other">Other</option>
+          <option value="" className="bg-gray-900">Select an option</option>
+          <option value="hrtbeat" className="bg-gray-900">HRTBeat AI</option>
+          <option value="custom-ai" className="bg-gray-900">Custom AI Solutions</option>
+          <option value="consulting" className="bg-gray-900">AI Consulting</option>
+          <option value="other" className="bg-gray-900">Other</option>
         </select>
-        {errors.interest && <p className="mt-1 text-sm text-red-600">{errors.interest}</p>}
+        {errors.interest && <p className="mt-1 text-sm text-red-400">{errors.interest}</p>}
       </div>
 
       <TextArea
