@@ -117,19 +117,26 @@ The contact form includes:
 
 ### SEO
 
-- Metadata API for all pages
-- OpenGraph and Twitter Card support
-- Dynamic sitemap generation
-- Robots.txt configuration
-- Semantic HTML structure
+- Comprehensive metadata API for all pages
+- OpenGraph and Twitter Card support with images
+- Structured data (JSON-LD) for Organization
+- Dynamic sitemap generation (`/sitemap.xml`)
+- Robots.txt configuration (`/robots.txt`)
+- Semantic HTML structure with proper headings
+- Favicon and Apple touch icons
+- Web manifest for PWA support
+- Canonical URLs
+- Fast page loads optimized for Core Web Vitals
 
 ### Design System
 
+- Dark theme: gray-950/900 backgrounds, white/gray text
 - Brand colors: Blue (#2E6FFF) to Purple (#A855F7) gradient
-- Custom fonts: Inter (body), Poppins (headings)
+- Custom fonts: Geist (body and headings)
 - Responsive breakpoints (mobile, tablet, desktop)
 - Consistent spacing and typography scales
-- Hover effects and transitions
+- Hover effects and smooth transitions
+- Accessible color contrast ratios (WCAG AA)
 
 ## Deployment
 

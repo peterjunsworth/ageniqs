@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import ContactForm from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
   title: 'Contact Ageniqs - Get Started with Enterprise AI Solutions',
   description: 'Ready to transform your business with AI? Contact Ageniqs for a consultation on HRTBeat AI or custom agentic solutions.',
+  alternates: {
+    canonical: 'https://www.ageniqs.com/contact',
+  },
+  openGraph: {
+    url: 'https://www.ageniqs.com/contact',
+    type: 'website',
+    title: 'Contact Ageniqs - Get Started with Enterprise AI',
+    description: 'Ready to transform your business with AI? Contact Ageniqs for a consultation on HRTBeat AI or custom agentic solutions.',
+  },
 };
 
 export default function ContactPage() {
@@ -12,6 +22,15 @@ export default function ContactPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/logo-white.png"
+                alt="Ageniqs"
+                width={280}
+                height={280}
+                className="h-28 w-auto"
+              />
+            </div>
             <h1 className="text-4xl font-display font-bold tracking-tight text-white sm:text-6xl">
               Let's Build Something <span className="text-gradient">Amazing Together</span>
             </h1>
@@ -40,12 +59,6 @@ export default function ContactPage() {
                   </h2>
 
                   <div className="space-y-6">
-                    <div>
-                      <h3 className="text-sm font-semibold text-white mb-2">Email</h3>
-                      <a href="mailto:hello@ageniqs.com" className="text-brand-blue-400 hover:text-white transition-colors">
-                        hello@ageniqs.com
-                      </a>
-                    </div>
 
                     <div>
                       <h3 className="text-sm font-semibold text-white mb-2">Website</h3>

@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'About Ageniqs - Enterprise AI Leaders | The Data Point',
   description: 'Learn about Ageniqs, the U.S. growth arm of The Data Point, specializing in enterprise AI commercialization and custom agentic solutions.',
+  alternates: {
+    canonical: 'https://www.ageniqs.com/about',
+  },
+  openGraph: {
+    url: 'https://www.ageniqs.com/about',
+    type: 'website',
+    title: 'About Ageniqs - Enterprise AI Leaders',
+    description: 'Learn about Ageniqs, the U.S. growth arm of The Data Point, specializing in enterprise AI commercialization and custom agentic solutions.',
+  },
 };
 
 export default function AboutPage() {
@@ -11,6 +21,15 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/logo-white.png"
+                alt="Ageniqs"
+                width={280}
+                height={280}
+                className="h-28 w-auto"
+              />
+            </div>
             <h1 className="text-4xl font-display font-bold tracking-tight text-white sm:text-6xl">
               About <span className="text-gradient">Ageniqs</span>
             </h1>

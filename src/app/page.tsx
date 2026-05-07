@@ -1,10 +1,73 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://www.ageniqs.com',
+  },
+  openGraph: {
+    url: 'https://www.ageniqs.com',
+    type: 'website',
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Ageniqs',
+  url: 'https://www.ageniqs.com',
+  logo: 'https://www.ageniqs.com/images/logo-white.png',
+  description: 'Ageniqs is the U.S. growth arm of The Data Point, specializing in enterprise AI commercialization, HRTBeat AI, and custom agentic solutions.',
+  foundingDate: '2024',
+  sameAs: [
+    'https://www.thedatapoint.ai',
+  ],
+  address: {
+    '@type': 'PostalAddress',
+    addressCountry: 'US',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'Sales',
+    email: 'hello@ageniqs.com',
+  },
+  parentOrganization: {
+    '@type': 'Organization',
+    name: 'The Data Point',
+    url: 'https://www.thedatapoint.ai',
+  },
+  knowsAbout: [
+    'Enterprise AI',
+    'AI Commercialization',
+    'HRTBeat AI',
+    'Agentic AI',
+    'Custom AI Solutions',
+    'AI Automation',
+  ],
+};
+
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="min-h-screen">
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 py-20 sm:py-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-blue-900/20 via-transparent to-transparent"></div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
           <div className="mx-auto max-w-2xl text-center">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/logo-white.png"
+                alt="Ageniqs"
+                width={280}
+                height={280}
+                className="h-32 w-auto"
+                priority
+              />
+            </div>
             <h1 className="text-4xl font-display font-bold tracking-tight text-white sm:text-6xl">
               Transform Your Enterprise with{' '}
               <span className="text-gradient">AI That Delivers Results</span>
@@ -155,5 +218,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

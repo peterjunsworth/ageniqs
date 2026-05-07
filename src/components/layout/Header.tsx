@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <Image
-              src="/images/logo-white.png"
+              src="/images/logo-white-simple.png"
               alt="Ageniqs Logo"
               width={56}
               height={56}

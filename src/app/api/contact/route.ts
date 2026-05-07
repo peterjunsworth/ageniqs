@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
       console.error('Failed to send admin notification:', emailError);
     }
 
-    try {
+    /*try {
       await resend.emails.send({
         from: EMAIL_CONFIG.from,
         to: data.email,
@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
       });
     } catch (emailError) {
       console.error('Failed to send confirmation email:', emailError);
-    }
+    }*/
 
     return NextResponse.json(
       { success: true, message: 'Message sent successfully' },

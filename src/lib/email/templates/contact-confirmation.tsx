@@ -50,8 +50,6 @@ export default function ContactConfirmation({ name }: ContactConfirmationProps) 
             Ageniqs - The U.S. growth arm of{' '}
             <a href="https://www.thedatapoint.ai/" style={link}>The Data Point</a>
             <br />
-            Email: <a href="mailto:hello@ageniqs.com" style={link}>hello@ageniqs.com</a>
-            <br />
             Website: <a href="https://www.ageniqs.com" style={link}>www.ageniqs.com</a>
           </Text>
         </Container>

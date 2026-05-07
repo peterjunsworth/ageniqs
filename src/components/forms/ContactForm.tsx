@@ -107,7 +107,7 @@ export default function ContactForm() {
             </svg>
             <div>
               <h3 className="text-sm font-medium text-red-800">Something went wrong</h3>
-              <p className="mt-1 text-sm text-red-700">Please try again or email us directly at hello@ageniqs.com</p>
+              <p className="mt-1 text-sm text-red-700">Please try again</p>
             </div>
           </div>
         </div>

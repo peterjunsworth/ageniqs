@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'HRTBeat AI - Transform HR with AI-Powered Insights | Ageniqs',
   description: 'HRTBeat AI delivers enterprise-grade HR transformation through AI-powered insights, automation, and intelligent workflows. Streamline operations and drive measurable results.',
+  alternates: {
+    canonical: 'https://www.ageniqs.com/solutions/hrtbeat-ai',
+  },
+  openGraph: {
+    url: 'https://www.ageniqs.com/solutions/hrtbeat-ai',
+    type: 'website',
+    title: 'HRTBeat AI - Transform HR with AI-Powered Insights',
+    description: 'HRTBeat AI delivers enterprise-grade HR transformation through AI-powered insights, automation, and intelligent workflows.',
+  },
 };
 
 export default function HRTBeatPage() {
@@ -11,6 +21,15 @@ export default function HRTBeatPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/logo-white.png"
+                alt="Ageniqs"
+                width={280}
+                height={280}
+                className="h-28 w-auto"
+              />
+            </div>
             <div className="inline-flex items-center rounded-full px-4 py-2 bg-brand-blue-500/10 text-brand-blue-700 font-semibold text-sm mb-6">
               <span className="mr-2">⚡</span> Enterprise HR Platform
             </div>

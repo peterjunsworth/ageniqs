@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Custom Agentic AI Solutions for Enterprise | Ageniqs',
   description: 'Build bespoke agentic AI systems tailored to your unique business challenges. Powered by The Data Point, our custom solutions combine automation and intelligent decision-making.',
+  alternates: {
+    canonical: 'https://www.ageniqs.com/solutions/custom-ai',
+  },
+  openGraph: {
+    url: 'https://www.ageniqs.com/solutions/custom-ai',
+    type: 'website',
+    title: 'Custom Agentic AI Solutions for Enterprise',
+    description: 'Build bespoke agentic AI systems tailored to your unique business challenges. Powered by The Data Point engineering expertise.',
+  },
 };
 
 export default function CustomAIPage() {
@@ -11,6 +21,15 @@ export default function CustomAIPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/logo-white.png"
+                alt="Ageniqs"
+                width={280}
+                height={280}
+                className="h-28 w-auto"
+              />
+            </div>
             <div className="inline-flex items-center rounded-full px-4 py-2 bg-brand-purple-500/10 text-brand-purple-700 font-semibold text-sm mb-6">
               <span className="mr-2">🚀</span> Bespoke AI Development
             </div>

@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: 'AI Solutions for Enterprise | Ageniqs',
   description: 'Discover enterprise AI solutions from Ageniqs. From HRTBeat AI to custom agentic systems, we help businesses operationalize AI for measurable results.',
+  alternates: {
+    canonical: 'https://www.ageniqs.com/solutions',
+  },
+  openGraph: {
+    url: 'https://www.ageniqs.com/solutions',
+    type: 'website',
+    title: 'Enterprise AI Solutions | Ageniqs',
+    description: 'Discover enterprise AI solutions from Ageniqs. From HRTBeat AI to custom agentic systems, we help businesses operationalize AI for measurable results.',
+  },
 };
 
 export default function SolutionsPage() {
@@ -12,6 +22,15 @@ export default function SolutionsPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/logo-white.png"
+                alt="Ageniqs"
+                width={280}
+                height={280}
+                className="h-28 w-auto"
+              />
+            </div>
             <h1 className="text-4xl font-display font-bold tracking-tight text-white sm:text-6xl">
               AI Solutions That <span className="text-gradient">Drive Results</span>
             </h1>
