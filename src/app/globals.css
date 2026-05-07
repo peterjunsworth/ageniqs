@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 46 111 255;
+    --color-primary-dark: 22 61 225;
+    --color-accent: 168 85 247;
+  }
+
+  body {
+    @apply text-gray-900 bg-white antialiased;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-brand;
+  }
+}
