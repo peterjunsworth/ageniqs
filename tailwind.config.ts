@@ -38,8 +38,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-poppins)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-geist)', '-apple-system', 'system-ui', 'sans-serif'],
+        display: ['var(--font-geist)', '-apple-system', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'display-1': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
