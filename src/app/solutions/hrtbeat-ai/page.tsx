@@ -18,6 +18,16 @@ export const metadata: Metadata = {
 export default function HRTBeatPage() {
   return (
     <div className="min-h-screen">
+      <section className="relative w-full h-screen">
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/VCncGfivE8g?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
+          title="HRTBeat AI Demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </section>
+
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
