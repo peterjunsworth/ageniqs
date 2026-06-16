@@ -5,7 +5,7 @@ export const contactFormSchema = z.object({
   email: z.string().email('Invalid email address'),
   company: z.string().optional(),
   phone: z.string().optional(),
-  interest: z.enum(['hrtbeat', 'custom-ai', 'consulting', 'other']).optional(),
+  interest: z.enum(['datapoint', 'hrtbeat', 'custom-ai', 'consulting', 'other']).optional(),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 });
 
