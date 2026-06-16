@@ -45,6 +45,11 @@ export default function Footer() {
             <h3 className="text-sm font-semibold mb-4 text-gray-200">Solutions</h3>
             <ul className="space-y-3">
               <li>
+                <Link href="/solutions/datapoint-ai" className="text-gray-400 hover:text-white transition-colors">
+                  The Data Point
+                </Link>
+              </li>
+              <li>
                 <Link href="/solutions/hrtbeat-ai" className="text-gray-400 hover:text-white transition-colors">
                   HRTBeat AI
                 </Link>

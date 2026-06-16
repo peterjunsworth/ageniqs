@@ -5,6 +5,7 @@ import {
   Heading,
   Html,
   Text,
+  Link,
 } from '@react-email/components';
 
 interface ContactConfirmationProps {
@@ -28,6 +29,11 @@ export default function ContactConfirmation({ name }: ContactConfirmationProps) 
             In the meantime, feel free to explore more about our solutions:
           </Text>
           <ul style={list}>
+            <li style={listItem}>
+              <Text style={listText}> <strong>The Data Point:</strong> Build no-code AI-powered business workflows that orchestrate recruitment, loan processing, manufacturing, compliance, and enterprise operations across Microsoft Teams, Slack, email, SMS, and more. Learn more at{" "}
+              <Link href="https://www.thedatapoint.ai">www.thedatapoint.ai</Link>.
+              </Text>
+            </li>
             <li style={listItem}>
               <Text style={listText}>
                 <strong>HRTBeat AI:</strong> Transform HR operations with AI-powered insights and automation

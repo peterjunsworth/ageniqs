@@ -162,6 +162,45 @@ export default function Home() {
           </div>
 
           <div className="mx-auto max-w-5xl">
+
+            <div className="grid grid-cols-1 mb-8">
+
+              <a
+                href="/solutions/datapoint-ai"
+                className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gray-950/50 p-8 hover:border-brand-blue-500 hover:shadow-2xl hover:shadow-brand-blue-500/10 transition-all duration-300"
+              >
+                <div className="absolute top-0 right-0 h-32 w-32 rounded-bl-full bg-gradient-brand opacity-10"></div>
+
+                <h3 className="text-2xl font-display font-bold text-white mb-4 group-hover:text-gradient transition-all">
+                  The Data Point
+                </h3>
+
+                <p className="text-gray-400 mb-6">
+                  Build intelligent, no-code AI workflows that orchestrate complex business
+                  processes across Microsoft Teams, Slack, email, SMS, and enterprise
+                  systems. Automate recruitment, loan processing, manufacturing,
+                  compliance, onboarding, and more while keeping humans in control of
+                  critical decisions.
+                </p>
+
+                <span className="inline-flex items-center text-brand-blue-400 font-semibold group-hover:gap-2 transition-all">
+                  Learn More
+                  <svg
+                    className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
               <a href="/solutions/hrtbeat-ai" className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gray-950/50 p-8 hover:border-brand-blue-500 hover:shadow-2xl hover:shadow-brand-blue-500/10 transition-all duration-300">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-brand opacity-10 rounded-bl-full"></div>
