@@ -165,6 +165,7 @@ export default function ContactForm() {
           className="w-full px-4 py-3 border border-gray-700 bg-gray-900/50 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:border-brand-blue-500 transition-all"
         >
           <option value="" className="bg-gray-900">Select an option</option>
+          <option value="datapoint" className="bg-gray-900">The Data Point</option>
           <option value="hrtbeat" className="bg-gray-900">HRTBeat AI</option>
           <option value="custom-ai" className="bg-gray-900">Custom AI Solutions</option>
           <option value="consulting" className="bg-gray-900">AI Consulting</option>
