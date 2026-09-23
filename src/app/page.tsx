@@ -176,11 +176,9 @@ export default function Home() {
                 </h3>
 
                 <p className="text-gray-400 mb-6">
-                  Build intelligent, no-code AI workflows that orchestrate complex business
-                  processes across Microsoft Teams, Slack, email, SMS, and enterprise
-                  systems. Automate recruitment, loan processing, manufacturing,
-                  compliance, onboarding, and more while keeping humans in control of
-                  critical decisions.
+                  We don't sell software. We deliver outcomes. An AI workflow platform that models any business process and automates it
+                  end to end - no builder, no admin console, delivered where your people already
+                  work: Microsoft Teams.
                 </p>
 
                 <span className="inline-flex items-center text-brand-blue-400 font-semibold group-hover:gap-2 transition-all">

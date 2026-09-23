@@ -18,59 +18,48 @@ export const metadata: Metadata = {
 };
 
 export default function DataPointPage() {
-  const features = [
+  const problems = [
+    { area: "HR", issue: "Onboarding buried in spreadsheets." },
+    { area: "Finance", issue: "Approvals stuck in an inbox for days." },
+    { area: "Operations", issue: "Knowledge trapped in one person's head." },
+  ];
+
+  const steps = [
     {
-      title: "No-Code Workflow Builder",
+      number: "01",
+      title: "We Consult",
       description:
-        "Design sophisticated AI-powered workflows visually without writing a single line of code.",
+        "We map your real workflows: the overhead, the bottlenecks, the pain points costing you time and money.",
     },
     {
-      title: "Agentic AI Orchestration",
+      number: "02",
+      title: "We Model",
       description:
-        "AI agents gather information, coordinate stakeholders, trigger actions, and keep work moving automatically.",
+        "We build the automation inside our own admin layer - your team never has to touch it.",
     },
     {
-      title: "Microsoft Teams & Slack Native",
+      number: "03",
+      title: "You Benefit",
       description:
-        "Operate directly inside Teams and Slack while supporting SMS, email, and a secure web portal.",
-    },
-    {
-      title: "Human-in-the-Loop",
-      description:
-        "Humans stay in control of approvals and critical decisions while AI automates coordination and administration.",
-    },
-    {
-      title: "Enterprise Integrations",
-      description:
-        "Connect seamlessly with HR systems, CRMs, ERPs, document repositories, APIs, and line-of-business applications.",
-    },
-    {
-      title: "Compliance & Audit Trails",
-      description:
-        "Every AI action is transparent, traceable, and auditable for regulated industries and enterprise governance.",
+        "Your people start working immediately - inside Microsoft Teams, with a Data Point consultant on call right there in the channel for help and advice.",
     },
   ];
 
-  const useCases = [
+  const pricing = [
     {
-      title: "AI Recruitment",
+      title: "Pay for What You Use",
       description:
-        "Generate job descriptions, screen resumes, schedule interviews, and automate onboarding while recruiters remain in control.",
+        "No bloated licenses or idle seats - you only pay for automation that's actually running for you.",
     },
     {
-      title: "Loan Processing",
+      title: "Consulting That Pays You Back",
       description:
-        "Automate document collection, validation, applicant communication, routing, and approvals to reduce processing time from weeks to hours.",
+        "Your setup spend converts into usage credit, so getting started never feels like a sunk cost.",
     },
     {
-      title: "Manufacturing",
+      title: "Every Project Gets You More",
       description:
-        "Coordinate procurement, inventory, production scheduling, quality assurance, and logistics across connected systems.",
-    },
-    {
-      title: "Real Estate Appraisal",
-      description:
-        "Automate onboarding, compliance document collection, folder creation, data synchronization, and approvals.",
+        "Our shared library means faster rollouts and lower cost for you as we automate more of your business.",
     },
   ];
 
@@ -93,15 +82,16 @@ export default function DataPointPage() {
               ⚡ No-Code Agentic Workflow Platform
             </div>
 
-            <h1 className="text-4xl sm:text-6xl font-display font-bold tracking-tight text-white">
-              <span className="text-gradient">The Data Point</span>
+            <h1 className="text-4xl sm:text-6xl font-display font-bold tracking-tight text-white mb-6">
+              We don't sell software.
+              <br />
+              <span className="text-gradient">We deliver outcomes.</span>
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-gray-400">
-              Automate complex business workflows with AI agents that work
-              directly inside Microsoft Teams, Slack, SMS, email, and your web
-              portal. Build intelligent automations without code while keeping
-              humans in control of critical business decisions.
+              An AI workflow platform that models any business process and automates it
+              end to end - no builder, no admin console, delivered where your people already
+              work: Microsoft Teams.
             </p>
 
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -116,48 +106,27 @@ export default function DataPointPage() {
         </div>
       </section>
 
-      <section className="py-24">
-        <div className="mx-auto max-w-4xl px-6">
-          <h2 className="text-3xl font-display font-bold text-white mb-6">
-            The Challenge
-          </h2>
-
-          <p className="text-lg text-gray-400 mb-6">
-            Organizations have invested heavily in enterprise software, yet
-            employees still spend countless hours manually coordinating work
-            between disconnected systems. Teams chase approvals, send follow-up
-            emails, move information between applications, and perform
-            repetitive administrative tasks that add little business value.
-          </p>
-
-          <p className="text-lg text-gray-400">
-            The Data Point eliminates this friction by providing an AI-powered
-            orchestration layer that automates communication, coordination, data
-            collection, routing, and process execution while allowing humans to
-            retain control over key business decisions.
-          </p>
-        </div>
-      </section>
-
       <section className="py-24 bg-gray-900">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-display font-bold text-white text-center mb-12">
-            Key Features
+          <h2 className="text-3xl font-display font-bold text-white text-center mb-6">
+            The Problem
           </h2>
+          <p className="text-lg text-gray-400 text-center mb-12 max-w-4xl mx-auto">
+            Every business runs on manual workflows nobody has time to fix - onboarding buried in email threads, approvals
+            stuck in an inbox, institutional knowledge trapped in one person's head. The fix exists, but it's built for engineers
+            to configure. Most companies don't have engineers to spare.
+          </p>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature) => (
+          <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+            {problems.map((problem) => (
               <div
-                key={feature.title}
-                className="rounded-2xl border border-gray-800 p-8"
+                key={problem.area}
+                className="rounded-2xl border border-gray-800 bg-gray-950/50 p-8"
               >
                 <h3 className="text-xl font-semibold text-white mb-3">
-                  {feature.title}
+                  {problem.area}
                 </h3>
-
-                <p className="text-gray-400">
-                  {feature.description}
-                </p>
+                <p className="text-gray-400">{problem.issue}</p>
               </div>
             ))}
           </div>
@@ -167,22 +136,24 @@ export default function DataPointPage() {
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-display font-bold text-white text-center mb-12">
-            Example Use Cases
+            How It Works
           </h2>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            {useCases.map((item) => (
+          <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+            {steps.map((step) => (
               <div
-                key={item.title}
-                className="rounded-2xl border border-gray-800 p-8"
+                key={step.number}
+                className="rounded-2xl border border-gray-800 bg-gray-900/50 p-8"
               >
-                <h3 className="text-2xl font-semibold text-white mb-4">
-                  {item.title}
+                <div className="inline-flex items-center justify-center rounded-lg bg-brand-blue-500/10 p-3 mb-4">
+                  <span className="text-2xl font-bold text-brand-blue-400">
+                    {step.number}
+                  </span>
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">
+                  {step.title}
                 </h3>
-
-                <p className="text-gray-400">
-                  {item.description}
-                </p>
+                <p className="text-gray-400">{step.description}</p>
               </div>
             ))}
           </div>
@@ -191,81 +162,51 @@ export default function DataPointPage() {
 
       <section className="py-24 bg-gray-900">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-3xl font-display font-bold text-center text-white mb-12">
-            Business Benefits
-          </h2>
-
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Reduce Administrative Work
-              </h3>
-              <p className="text-gray-400">
-                Eliminate repetitive coordination tasks and allow employees to
-                focus on high-value work instead of manual administration.
-              </p>
+          <div className="rounded-3xl border-2 border-brand-blue-500/30 bg-gradient-to-br from-gray-950 to-gray-900 p-10">
+            <div className="inline-flex items-center rounded-full bg-brand-blue-500/10 px-4 py-2 text-sm font-semibold text-brand-blue-400 mb-4">
+              PROVEN FIRST IN HR
             </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Accelerate Operations
-              </h3>
-              <p className="text-gray-400">
-                Compress workflows that traditionally take weeks into hours by
-                automating communication, routing, and execution.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-2">
-                No-Code Configuration
-              </h3>
-              <p className="text-gray-400">
-                Business users can design and deploy sophisticated AI workflows
-                without engineering resources.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Human Oversight Built In
-              </h3>
-              <p className="text-gray-400">
-                AI performs orchestration while configurable approval points
-                ensure humans remain accountable for critical decisions.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Enterprise Ready
-              </h3>
-              <p className="text-gray-400">
-                Integrate with existing business systems while maintaining
-                transparency, compliance, and complete auditability.
-              </p>
-            </div>
+            <h2 className="text-3xl font-display font-bold text-white mb-4">
+              HRtBeat
+            </h2>
+            <p className="text-lg text-gray-400">
+              Hiring, onboarding, payroll, benefits, and every other HR question or workflow - automated entirely inside
+              Microsoft Teams, built on The Data Point platform. HR is the proof. Loan processing, real estate appraisals,
+              manufacturing, facilities, and IT are your opportunities.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="py-24">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="text-4xl font-display font-bold text-white mb-6">
-            The Future of Enterprise Software Isn't Another App
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-3xl font-display font-bold text-center text-white mb-12">
+            Pricing That Works for You
           </h2>
 
-          <p className="text-lg text-gray-400 mb-10">
-            It's an intelligent orchestration layer that works across all of
-            your existing applications, coordinating people, AI agents, and
-            systems to automate complex business workflows.
-          </p>
+          <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+            {pricing.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl border border-gray-800 bg-gray-900/50 p-8"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-gray-400">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
+      <section className="py-24 bg-gray-900">
+        <div className="mx-auto max-w-3xl px-6 text-center">
           <a
             href="/contact"
             className="inline-block rounded-lg bg-gradient-brand px-8 py-4 text-base font-semibold text-white shadow-lg hover:shadow-glow transition-all"
           >
-            Request a Personalized Demo
+            Let's map your first workflow
           </a>
         </div>
       </section>
