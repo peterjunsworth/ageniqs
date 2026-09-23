@@ -54,37 +54,42 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="min-h-screen">
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 py-20 sm:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-blue-900/20 via-transparent to-transparent"></div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
+      <section className="relative overflow-hidden hero-bg py-20 sm:py-32">
+        {/* Grid sparks */}
+        <div className="grid-sparks-container">
+          {[...Array(14)].map((_, i) => (
+            <div key={i} className="grid-spark" />
+          ))}
+        </div>
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
           <div className="mx-auto max-w-2xl text-center">
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-8 animate-fade-in opacity-0">
               <Image
                 src="/images/logo-white.png"
                 alt="Ageniqs"
                 width={280}
                 height={280}
-                className="h-32 w-auto"
+                className="h-32 w-auto animate-float"
                 priority
               />
             </div>
-            <h1 className="text-4xl font-display font-bold tracking-tight text-white sm:text-6xl">
+            <h1 className="text-4xl font-display font-bold tracking-tight text-white sm:text-6xl animate-fade-in-up opacity-0">
               Transform Your Enterprise with{' '}
-              <span className="text-gradient">AI That Delivers Results</span>
+              <span className="text-gradient-animated">AI That Delivers Results</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-400">
+            <p className="mt-6 text-lg leading-8 text-gray-400 animate-fade-in-up-delay opacity-0">
               Ageniqs is the U.S. growth arm of The Data Point, specializing in enterprise AI commercialization and custom agentic solutions.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center justify-center gap-x-6 animate-fade-in-up-delay opacity-0">
               <a
                 href="/solutions"
-                className="rounded-lg bg-gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-lg hover:shadow-glow transition-all duration-200"
+                className="rounded-lg bg-gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-lg hover:shadow-glow transition-all duration-200 hover:scale-105"
               >
                 Explore Our Solutions
               </a>
               <a
                 href="/contact"
-                className="text-sm font-semibold leading-6 text-white border border-gray-700 px-6 py-3 rounded-lg hover:border-brand-blue-500 hover:bg-gray-800/50 transition-all duration-200"
+                className="text-sm font-semibold leading-6 text-white border border-gray-700 px-6 py-3 rounded-lg hover:border-brand-blue-500 hover:bg-gray-800/50 transition-all duration-200 hover:scale-105"
               >
                 Contact Us <span aria-hidden="true">→</span>
               </a>
