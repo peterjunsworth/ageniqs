@@ -15,6 +15,8 @@ interface ContactNotificationProps {
 
 export default function ContactNotification({ data }: ContactNotificationProps) {
   const interestLabels: Record<string, string> = {
+    'datapoint': 'The Data Point',
+    'insignal': 'Insignal',
     'hrtbeat': 'HRTBeat AI',
     'custom-ai': 'Custom AI Solutions',
     'consulting': 'AI Consulting',

@@ -50,6 +50,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/solutions/insignal" className="text-gray-400 hover:text-white transition-colors">
+                  Insignal
+                </Link>
+              </li>
+              <li>
                 <Link href="/solutions/hrtbeat-ai" className="text-gray-400 hover:text-white transition-colors">
                   HRTBeat AI
                 </Link>

@@ -53,7 +53,7 @@ export default function SolutionsPage() {
           </div>
 
           <div className="mx-auto max-w-5xl">
-            <div className="grid grid-cols-1 mb-8">
+            <div className="grid grid-cols-1 gap-8 mb-8">
 
               <a
                 href="/solutions/datapoint-ai"
@@ -88,6 +88,29 @@ export default function SolutionsPage() {
                   </svg>
                 </span>
               </a>
+
+              <Link
+                href="/solutions/insignal"
+                className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gray-950/50 p-8 hover:border-brand-purple-500 hover:shadow-2xl hover:shadow-brand-purple-500/10 transition-all duration-300"
+              >
+                <div className="absolute top-0 right-0 h-32 w-32 rounded-bl-full bg-gradient-to-br from-brand-purple-400 to-brand-blue-400 opacity-10"></div>
+
+                <h3 className="text-2xl font-display font-bold text-white mb-4 group-hover:text-gradient transition-all">
+                  Insignal
+                </h3>
+
+                <p className="text-gray-400 mb-6">
+                  Analytics that build themselves. Tell Otto, the always-on data agent, where your data lives and it builds the warehouse,
+                  defines your metrics, and answers your team&apos;s questions in plain English, with the SQL shown.
+                </p>
+
+                <span className="inline-flex items-center text-brand-purple-400 font-semibold group-hover:gap-2 transition-all">
+                  Explore Insignal
+                  <svg className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </span>
+              </Link>
             </div>
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
               <Link href="/solutions/hrtbeat-ai" className="group relative overflow-hidden rounded-3xl border-2 border-gray-800 bg-gray-950 p-10 hover:border-brand-blue-400 hover:shadow-2xl transition-all duration-300">

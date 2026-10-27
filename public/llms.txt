@@ -29,6 +29,9 @@ HRtBeat - Hiring, onboarding, payroll, benefits, and every other HR question or 
 - Consulting That Pays You Back - Setup spend converts into usage credit
 - Every Project Gets You More - Shared library means faster rollouts and lower cost as we automate more of your business
 
+### Insignal
+Analytics that build themselves (https://insignal.ai). Insignal is the always-on data agent: tell Otto where your data lives (databases, cloud storage files, SaaS apps like Stripe and HubSpot) and it builds the warehouse, defines metrics in a semantic layer, and answers questions in plain English with the SQL shown. Includes dashboards, alerts, PDF reports, fine-grained permissions (grants, row filters, column masks), MCP support, and optional self-hosting with your own model keys.
+
 ### HRtBeat AI
 Transform HR operations with AI-powered insights, automation, and intelligent workflows designed for modern enterprises.
 

@@ -36,6 +36,12 @@ export default function ContactConfirmation({ name }: ContactConfirmationProps) 
             </li>
             <li style={listItem}>
               <Text style={listText}>
+                <strong>Insignal:</strong> Analytics that build themselves, powered by Otto, the always-on data agent. Learn more at{" "}
+                <Link href="https://insignal.ai">insignal.ai</Link>.
+              </Text>
+            </li>
+            <li style={listItem}>
+              <Text style={listText}>
                 <strong>HRTBeat AI:</strong> Transform HR operations with AI-powered insights and automation
               </Text>
             </li>

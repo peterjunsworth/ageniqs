@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import AgentConsole from "@/components/home/AgentConsole";
 
 export const metadata: Metadata = {
   alternates: {
@@ -40,6 +40,8 @@ const jsonLd = {
     'Enterprise AI',
     'AI Commercialization',
     'HRTBeat AI',
+    'Insignal',
+    'AI Analytics',
     'Agentic AI',
     'Custom AI Solutions',
     'AI Automation',
@@ -54,45 +56,65 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="min-h-screen">
-      <section className="relative overflow-hidden hero-bg py-20 sm:py-32">
-        {/* Grid sparks */}
-        <div className="grid-sparks-container">
-          {[...Array(14)].map((_, i) => (
-            <div key={i} className="grid-spark" />
-          ))}
-        </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-          <div className="mx-auto max-w-2xl text-center">
-            <div className="flex justify-center mb-8 animate-fade-in opacity-0">
-              <Image
-                src="/images/logo-white.png"
-                alt="Ageniqs"
-                width={280}
-                height={280}
-                className="h-32 w-auto animate-float"
-                priority
-              />
-            </div>
-            <h1 className="text-4xl font-display font-bold tracking-tight text-white sm:text-6xl animate-fade-in-up opacity-0">
-              Transform Your Enterprise with{' '}
-              <span className="text-gradient-animated">AI That Delivers Results</span>
+      <section className="hero-ai relative isolate overflow-hidden pt-16 pb-24 sm:pt-24 sm:pb-32">
+        {/* Background layers */}
+        <div className="hero-aurora" aria-hidden="true" />
+        <div className="hero-dots" aria-hidden="true" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-gray-950" aria-hidden="true" />
+
+        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-12 lg:gap-12 lg:px-8">
+          <div className="text-center lg:col-span-6 lg:text-left">
+            <a
+              href="/solutions/datapoint-ai"
+              className="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] py-1 pl-1 pr-3 text-xs text-gray-300 backdrop-blur animate-fade-in opacity-0 hover:border-brand-blue-400/40 transition-colors"
+            >
+              <span className="rounded-full bg-gradient-brand px-2 py-0.5 text-[11px] font-semibold text-white">New</span>
+              AI agents that work inside Microsoft Teams
+              <svg className="h-3 w-3 text-gray-500 group-hover:translate-x-0.5 group-hover:text-white transition-all" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+
+            <h1 className="mt-8 font-display text-5xl font-semibold tracking-[-0.04em] text-white sm:text-7xl lg:text-[5.25rem] lg:leading-[0.95] animate-fade-in-up opacity-0">
+              AI agents that{' '}
+              <span className="text-gradient-animated">do the work.</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-400 animate-fade-in-up-delay opacity-0">
-              Ageniqs is the U.S. growth arm of The Data Point, specializing in enterprise AI commercialization and custom agentic solutions.
+
+            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-400 lg:mx-0 animate-fade-in-up-delay opacity-0">
+              We model your business processes and deploy agentic AI that runs them end to end, with humans in the loop where it matters. Outcomes, not software.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6 animate-fade-in-up-delay opacity-0">
-              <a
-                href="/solutions"
-                className="rounded-lg bg-gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-lg hover:shadow-glow transition-all duration-200 hover:scale-105"
-              >
-                Explore Our Solutions
-              </a>
+
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start animate-fade-in-up-delay opacity-0">
               <a
                 href="/contact"
-                className="text-sm font-semibold leading-6 text-white border border-gray-700 px-6 py-3 rounded-lg hover:border-brand-blue-500 hover:bg-gray-800/50 transition-all duration-200 hover:scale-105"
+                className="group relative inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-gray-950 shadow-[0_0_40px_-8px_rgba(46,111,255,0.8)] transition-all duration-200 hover:shadow-[0_0_60px_-8px_rgba(168,85,247,0.9)]"
               >
-                Contact Us <span aria-hidden="true">→</span>
+                Book a demo
+                <svg className="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
               </a>
+              <a
+                href="/solutions"
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-colors duration-200 hover:border-white/25 hover:bg-white/[0.06]"
+              >
+                Explore solutions
+              </a>
+            </div>
+
+            <ul className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 font-mono text-xs uppercase tracking-wider text-gray-500 lg:justify-start animate-fade-in-up-delay opacity-0">
+              {['Agentic workflows', 'Teams-native', 'Enterprise-grade'].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <span className="h-1 w-1 rounded-full bg-brand-blue-400" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="lg:col-span-6 animate-fade-in-up-delay opacity-0">
+            <div className="mx-auto max-w-lg lg:ml-auto lg:mr-0">
+              <AgentConsole />
             </div>
           </div>
         </div>
@@ -168,7 +190,7 @@ export default function Home() {
 
           <div className="mx-auto max-w-5xl">
 
-            <div className="grid grid-cols-1 mb-8">
+            <div className="grid grid-cols-1 gap-8 mb-8">
 
               <a
                 href="/solutions/datapoint-ai"
@@ -200,6 +222,29 @@ export default function Home() {
                       strokeLinejoin="round"
                       d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                     />
+                  </svg>
+                </span>
+              </a>
+
+              <a
+                href="/solutions/insignal"
+                className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gray-950/50 p-8 hover:border-brand-purple-500 hover:shadow-2xl hover:shadow-brand-purple-500/10 transition-all duration-300"
+              >
+                <div className="absolute top-0 right-0 h-32 w-32 rounded-bl-full bg-gradient-to-br from-brand-purple-400 to-brand-blue-400 opacity-10"></div>
+
+                <h3 className="text-2xl font-display font-bold text-white mb-4 group-hover:text-gradient transition-all">
+                  Insignal
+                </h3>
+
+                <p className="text-gray-400 mb-6">
+                  Analytics that build themselves. Tell Otto, the always-on data agent, where your data lives and it builds the warehouse,
+                  defines your metrics, and answers your team&apos;s questions in plain English.
+                </p>
+
+                <span className="inline-flex items-center text-brand-purple-400 font-semibold group-hover:gap-2 transition-all">
+                  Learn More
+                  <svg className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
                 </span>
               </a>

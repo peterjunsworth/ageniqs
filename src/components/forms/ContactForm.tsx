@@ -166,6 +166,7 @@ export default function ContactForm() {
         >
           <option value="" className="bg-gray-900">Select an option</option>
           <option value="datapoint" className="bg-gray-900">The Data Point</option>
+          <option value="insignal" className="bg-gray-900">Insignal</option>
           <option value="hrtbeat" className="bg-gray-900">HRTBeat AI</option>
           <option value="custom-ai" className="bg-gray-900">Custom AI Solutions</option>
           <option value="consulting" className="bg-gray-900">AI Consulting</option>
